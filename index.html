@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Dasar Pemrograman Web</title>
+        <link rel="stylesheet" type="text/css" href="assets/style/main.css">
+        <link rel="shortcut icon" href="https://leanfrontiers.com/wp-content/uploads/2018/12/logo-placeholder-png.png">
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <section class="container">
+                    <img width="150" src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.jpg" alt="ini logo"/>
+                </section>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="container">
+
+                <div id="content" class="flex-container">
+
+                    <div>
+                        <article>
+                            <div class="article-image">
+                                <img
+                                    width="100%"
+                                    src="http://blog.pekku.com/wp-content/uploads/2016/01/Perbedaan-web-designer-web-developer-web-progammer-dan-web-master-2-701x454.jpg"
+                                    alt="Perbedaan Web Designer, Web Programmer, Web Developer, dan Web Master"
+                                />
+                            </div>
+                            <div class="article-content">
+                                <h4>Perbedaan Web Designer, Web Programmer, Web Developer, dan Web Master</h4>
+
+                                <h5>Web Designer </h5>
+                                <p>
+                                    Sesuai dengan namanya, web designer bertanggung jawab atas desain seluruh layout dari website yang akan dibangun. Seorang web desainer akan menentukan tampilan dan susunan layout website mulai dari gaya dan konsep desain yang diinginkan, penggunaan warna, jenis font, foto, elemen bidang geometri, pola, penempatan tombol, logo dan sebagainya. Tampilan dan susunan layout yang telah didesain oleh web desainer bertujuan untuk memberikan harmonisasi dan menciptakan user experience yang baik bagi pengunjung website nantinya.  Untuk mendesainya, seorang web desainer akan membutuhkan program-program desain seperti Adobe Photoshop, Adobe Illustrator, 3DS Max, Flash Player, dan lain-lain.
+                                </p>
+
+                                <h5>Web Programmer</h5>
+                                <p>
+                                    Setelah website tersebut didesain dengan baik, selanjutnya web programmer bertanggung jawab untuk merealisasikan desain yang telah dibuat. Seorang web programmer akan  membangun website melalui bahasa pemrograman seperti Ruby on Rails, PHP, .NET, Java dengan program Sublim, Editor PHP, Java Script, dan sebagainya. Apabila website yang tersebut selesai dirangkai oleh web programmer, maka pengunjung dapat mengaksesnya dengan baik.
+                                </p>
+
+                                <h5>Web Developer</h5>
+                                <p>
+                                    Bila seorang web programmer bertanggung jawab untuk merangkai website sesuai desain hingga dapat diakses oleh pengunjung, maka web developer bertanggung jawab untuk melakukan analisa terhadap website yang telah dibangun tersebut. Analisa yang dilakukan meliputi perkembangan website dengan seluruh elemen yang bersangkutan seperti pertumbuhan pasar saat ini, perubahan perilaku dan psikologis target audience yang dituju oleh website, kecanggihan teknologi terkini yang dapat diaplikasikan pada website tersebut, dan lain-lain. Tujuan dari analisa yang dilakukan web developer ini adalah agar website yang telah dibangun itu dapat terus diakses oleh pengunjung dan mengikuti perkembangan tren serta jaman.
+                                    Web Master
+                                    Nah, web master adalah seseorang yang memiliki modal untuk membangun website itu sendiri. Tanpa modal yang cukup yang dimiliki oleh web master ini, tentunya sebuah website tidak akan terbangun dengan baik. Seorang web master dapat juga bekerja sebagai web designer, web programmer, atau web developer. Bila seorang web master tidak pernah berhubungan dengan dunia digital, ia dapat mencari jasa ketiga pekerjaan di atas untuk membangun website yang diingatkannya dengan baik.
+
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div>
+                        <aside>
+
+                            <div style="text-align: center">
+                                <img class="avatar"
+                                     src="https://d17ivq9b7rppb3.cloudfront.net/small/avatar/20201002210523ad9ecce808ffbdbfefae74d188016a3a.png"
+                                     alt="Nurhidaya image"
+                                />
+                                <p>
+                                    <b style="color: #66a1ff">Nurhidaya</b>
+                                </p>
+                            </div>
+
+                            <div>
+                                <table>
+                                    <thead style="width: 100%; font-size: 13px">
+                                        <tr>
+                                            <td>Tempat, Tanggal Lahir</td>
+                                            <td>:</td>
+                                            <td>Kabupaten pinrang, 11 November 1996</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pendidikan terakhir</td>
+                                            <td>:</td>
+                                            <td>Strata I</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Alamat</td>
+                                            <td>:</td>
+                                            <td>Jl. Recing center</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Telepon</td>
+                                            <td>:</td>
+                                            <td>+62 823-9652-4079</td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                        </aside>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-text">
+                <div class="container">
+                    <p>copyright © Nurhidaya 2020</p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+
+            let header = document.querySelector('header');
+            let sticky = header.offsetTop;
+
+            window.onscroll = () => {
+                if (window.pageYOffset > sticky) {
+
+                    header.classList.add("sticky");
+                } else {
+
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+
+    </body>
+</html>
